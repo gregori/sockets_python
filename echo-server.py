@@ -4,9 +4,9 @@ import socket
 server = '127.0.0.1'  # localhost - loopback
 port = 12345
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-    sock.bind((server, port))
-    sock.listen()
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # abre um socket TCP
+    sock.bind((server, port))  # vincula ao endereço e porta
+    sock.listen()   # escuta ...
     conn, addr = sock.accept()  # informação do cliente que conectou
     with conn:  # trabalhando com a conexão do cliente
         print('Cliente conectou com endereço:', addr)
