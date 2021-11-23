@@ -1,6 +1,6 @@
 import socket
 
-server = '127.0.0.1'  # endereço do servidor ao qual vamos conectar
+server = '127.0.1.1'  # endereço do servidor ao qual vamos conectar
 port = 12345   # porta à qual vamos conectar
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # abre socket TCP

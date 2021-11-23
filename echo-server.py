@@ -1,7 +1,7 @@
 import socket
 
 
-server = '127.0.0.1'  # localhost - loopback - endereço de escuta
+server = '127.0.1.1'  # localhost - loopback - endereço de escuta
 port = 12345
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # abre um socket TCP
